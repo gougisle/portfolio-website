@@ -1,0 +1,19 @@
+$neon-blue: #59d2fe;
+
+.App {
+  color: white;
+  span.neon-text {
+    color: $neon-blue;
+  }
+}
+
+.left-right-padding {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.view-main-header {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}

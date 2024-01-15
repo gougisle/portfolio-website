@@ -1,0 +1,104 @@
+$neon-blue: #59d2fe;
+$neon-blue-active: #59d2fec1;
+$dark-blue: #191923;
+$darker-blue: #111118;
+$egg-shell: #f5f5e2;
+$text-slide-duration: 3s;
+$text-slide-delay: 0.3s;
+
+.hero {
+  background: linear-gradient($neon-blue, $dark-blue);
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  font-family: "Montserrat", sans-serif;
+  justify-content: center;
+  align-items: center;
+  .hero-title {
+    color: $egg-shell;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+  }
+  @keyframes text-slide-down {
+    0% {
+      opacity: 0;
+      transform: translateY(-30%); // Start from the right
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); // Slide to the left
+    }
+  }
+  .animated-text {
+    animation: text-slide-down $text-slide-duration ease-in-out
+      $text-slide-delay both; /* Customize the animation duration and delay */
+  }
+}
+
+.cube {
+  position: absolute;
+  top: 80vh;
+  left: 45vw;
+  width: 10px;
+  height: 10px;
+  border: solid 1px darken($neon-blue, 8%);
+  transform-origin: top left;
+  transform: scale(0) rotate(0deg) translate(-50%, -50%);
+  animation: cube 12s ease-in forwards infinite;
+
+  &:nth-child(2n) {
+    border-color: lighten($neon-blue, 10%);
+  }
+
+  &:nth-child(2) {
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+  }
+
+  &:nth-child(3) {
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+  }
+
+  &:nth-child(4) {
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+  }
+
+  &:nth-child(5) {
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+  }
+
+  &:nth-child(6) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+  }
+}
+
+.welcome-message-section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+@keyframes cube {
+  from {
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
+  }
+  to {
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
+  }
+}

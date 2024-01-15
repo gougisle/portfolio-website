@@ -1,0 +1,81 @@
+$neon-blue: #59d2fe;
+$neon-blue-active: #59d2fec1;
+$dark-blue: #191923;
+$darker-blue: #111118;
+$egg-shell: #f5f5db;
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: $darker-blue;
+  height: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: larger;
+  font-weight: normal;
+  #site-name {
+    font-weight: 500;
+    text-decoration: none;
+    color: $egg-shell;
+  }
+
+  .header-title-section {
+    .media-icon:hover {
+      color: $neon-blue;
+    }
+    a {
+      text-decoration: none;
+      color: $egg-shell;
+    }
+  }
+  .header-nav-links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    a {
+      position: relative;
+      text-decoration: none;
+      color: $egg-shell; /* Change the text color to your preference */
+      &:hover {
+        color: $neon-blue;
+      }
+      &::before {
+        content: "";
+        color: $neon-blue;
+        position: absolute;
+        width: 0;
+        height: 2px; /* Adjust the thickness of the underline as needed */
+        background-color: $neon-blue; /* Change the color of the underline to your preference */
+        bottom: 0;
+        left: 0;
+        transition: width 0.3s; /* Adjust the animation speed as needed */
+      }
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  .contact-button {
+    border-top: 2px solid $neon-blue;
+    border-left: 2px solid $neon-blue;
+    border-right: 2px solid $neon-blue-active;
+    border-bottom: 2px solid $neon-blue-active;
+    border-radius: 10px;
+    background-color: $darker-blue;
+    color: $neon-blue;
+    padding: 0.5rem 1rem; //padding: vertical horizontal
+    cursor: pointer;
+    &:hover {
+      background-color: $neon-blue;
+      color: $dark-blue;
+    }
+    &:active {
+      background-color: hsla(196, 99%, 67%, 0.744);
+      transform: scale(0.9);
+    }
+  }
+}

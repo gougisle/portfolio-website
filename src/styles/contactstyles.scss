@@ -1,0 +1,42 @@
+$neon-blue: #59d2fe;
+$neon-blue-active: #59d2fec1;
+$dark-blue: #191923;
+$darker-blue: #111118;
+$egg-shell: #f5f5db;
+
+.contact-form-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .contact-form {
+    font-size: large;
+    background-color: $darker-blue;
+    border: 5px double $neon-blue;
+    border-radius: 10px;
+    width: 50rem;
+    padding: 1rem;
+    color: $neon-blue;
+    .input-field {
+      margin-bottom: 0.5rem;
+    }
+    .contact-button {
+      border-top: 2px solid $neon-blue;
+      border-left: 2px solid $neon-blue;
+      border-right: 2px solid $neon-blue-active;
+      border-bottom: 2px solid $neon-blue-active;
+      border-radius: 10px;
+      background-color: $darker-blue;
+      color: $neon-blue;
+      padding: 0.5rem 1rem; //padding: vertical horizontal
+      cursor: pointer;
+      &:hover {
+        background-color: $neon-blue;
+        color: $dark-blue;
+      }
+      &:active {
+        background-color: hsla(196, 99%, 67%, 0.744);
+        transform: scale(0.9);
+      }
+    }
+  }
+}
