@@ -35,7 +35,7 @@ const handleSheetsPOSTResponse = (resp) => {
 //#endregion
 
 const addNewContactToSheet = (contactData) => {
-  fetch(process.env.REACT_APP_SHEETS_DB_PRIVATE_URL, {
+  fetch("https://sheetdb.io/api/v1/fox6fwup727lp", {
     method: "POST",
     headers: {
       Accept: "application/json",
