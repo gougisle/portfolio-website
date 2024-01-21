@@ -21,7 +21,7 @@ $egg-shell: #f5f5db;
     border-radius: 10px;
     background-color: $darker-blue;
     color: $neon-blue;
-    padding: 0.5rem 1rem; //padding: vertical horizontal
+    padding: 0.5rem 1rem;
     cursor: pointer;
     &:hover {
       background-color: $neon-blue;
@@ -36,24 +36,10 @@ $egg-shell: #f5f5db;
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: white; /* Change the text color to your preference */
+    color: white;
     &:hover {
       color: $neon-blue;
     }
-    // &::before {
-    //   content: "";
-    //   color: $neon-blue;
-    //   position: absolute;
-    //   width: 0;
-    //   height: 2px; /* Adjust the thickness of the underline as needed */
-    //   background-color: $neon-blue; /* Change the color of the underline to your preference */
-    //   bottom: 0;
-    //   left: 0;
-    //   transition: width 0.3s; /* Adjust the animation speed as needed */
-    // }
-    // &:hover::before {
-    //   width: 100%;
-    // }
   }
 }
 
@@ -96,7 +82,7 @@ $egg-shell: #f5f5db;
   a {
     position: relative;
     text-decoration: none;
-    color: $egg-shell; /* Change the text color to your preference */
+    color: $egg-shell;
     &:hover {
       color: $neon-blue;
     }
@@ -105,11 +91,11 @@ $egg-shell: #f5f5db;
       color: $neon-blue;
       position: absolute;
       width: 0;
-      height: 2px; /* Adjust the thickness of the underline as needed */
-      background-color: $neon-blue; /* Change the color of the underline to your preference */
+      height: 2px;
+      background-color: $neon-blue;
       bottom: 0;
       left: 0;
-      transition: width 0.3s; /* Adjust the animation speed as needed */
+      transition: width 0.3s;
     }
     &:hover::before {
       width: 100%;

@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/footer.scss";
 
 export default function Footer() {
   const getCurrentYear = () => {
@@ -8,8 +7,8 @@ export default function Footer() {
   };
 
   return (
-    <div id="footer-container">
-      <div>Copyright © {getCurrentYear()} Lefeba Gougis.</div>
+    <div className="text-center my-5 py-3 fs-5">
+      <div>Copyright © {getCurrentYear()} Lefeba Gougis</div>
     </div>
   );
 }

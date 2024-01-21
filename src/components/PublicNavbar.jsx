@@ -17,8 +17,10 @@ export default function PublicNavbar() {
         className="bg-body-tertiary public-navbar"
       >
         <Container>
-          <Navbar.Brand href="/">
-            lefebagougis<span className="neon-text">.</span>io
+          <Navbar.Brand>
+            <Link to="home" offset={-200} style={{ cursor: "pointer" }}>
+              lefebagougis<span className="neon-text">.</span>io
+            </Link>
             <a
               href="https://github.com/gougisle"
               target="_blank"

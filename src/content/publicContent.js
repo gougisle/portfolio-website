@@ -1,3 +1,13 @@
+import {
+  faSquareJs,
+  faHtml5,
+  faCss3,
+  faReact,
+  faNodeJs,
+  faMicrosoft,
+} from "@fortawesome/free-brands-svg-icons";
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+
 const PROJECTS_ARR = [
   {
     company: "Distributed Drone Flight Management Tool (DXFMT)",
@@ -31,7 +41,7 @@ const PROJECTS_ARR = [
     company: "Center For Mindfulness and Human Potential (CMHP)",
     title: "QA Tester / Researcher",
     workDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
+      "Conducted QA testing on Mindfulness application ensuring reliability of new features across multiple devices. Recorded Designed surveys and questionnaires, to collect actionable user-feedback about the UI/UX. Edited and Pproduced both video and audio content from the application (i.e. recorded interviews, guided meditation and video lessons.",
     skills: [
       "Google Workspace",
       "Qualtrics",
@@ -41,4 +51,45 @@ const PROJECTS_ARR = [
   },
 ];
 
-export { PROJECTS_ARR };
+const SKILLS_ARR = [
+  {
+    label: "JavaScript",
+    icon: faSquareJs,
+    urlLink: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  },
+  {
+    label: "HTML5",
+    icon: faHtml5,
+    urlLink: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    label: "CSS3",
+    icon: faCss3,
+    urlLink: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  { label: "React", icon: faReact, urlLink: "https://react.dev/" },
+  {
+    label: "C#",
+    icon: null,
+    urlLink:
+      "https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/",
+  },
+  {
+    label: ".NET",
+    icon: faMicrosoft,
+    urlLink: "https://learn.microsoft.com/en-us/dotnet/",
+  },
+  {
+    label: "Node.js",
+    icon: faNodeJs,
+    urlLink: "https://nodejs.org/docs/latest/api/",
+  },
+  {
+    label: "SQL",
+    icon: faDatabase,
+    urlLink:
+      "https://learn.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver16",
+  },
+];
+
+export { PROJECTS_ARR, SKILLS_ARR };

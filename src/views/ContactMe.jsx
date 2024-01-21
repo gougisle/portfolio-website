@@ -33,7 +33,7 @@ export default function ContactMeView() {
             </div>
           </Element>
 
-          <div className="contact-preface text-center">
+          <div className="contact-preface text-center fs-5">
             <p>
               If you would like to learn more about my professional experience,
               collaborate on a project, or just talk shop.

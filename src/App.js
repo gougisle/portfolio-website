@@ -2,23 +2,17 @@ import React from "react";
 import "./App.scss";
 import PublicNavbar from "./components/PublicNavbar";
 import Introduction from "./views/Introduction";
-import ContactMeView from "./views/ContactMeView";
+import ContactMe from "./views/ContactMe";
 import Footer from "./components/Footer";
 import Spacer from "./components/Spacer";
-import Hero from "./components/Hero";
-import AboutMeView from "./views/AboutMeView";
-import ProjectsView from "./views/WorkExperience";
+import Hero from "./components/Background";
+import AboutMe from "./views/AboutMe";
+import WorkExperience from "./views/WorkExperience";
 
-// TODO:
-//  Convert into single page site
-//  rather than route to different pages just scroll down
-//  refactor the Hero part that it has finite borders
-
-// Hero
-// About
-// Skills
-// Projects
-// ContactM
+//TODO:
+// add text limit to the experience boxes, with "see more"
+// add description to CMPH experience box
+//
 
 function App() {
   return (
@@ -32,11 +26,11 @@ function App() {
           <div className="col-1" />
           <div className="col">
             <Introduction></Introduction>
-            <AboutMeView></AboutMeView>
+            <AboutMe></AboutMe>
             <Spacer />
-            <ProjectsView></ProjectsView>
+            <WorkExperience></WorkExperience>
             <Spacer />
-            <ContactMeView />
+            <ContactMe />
             <Footer />
           </div>
           <div className="col-1" />

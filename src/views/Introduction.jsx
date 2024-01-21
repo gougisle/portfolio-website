@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../assets/lefeba_headshot.png";
+import { Element } from "react-scroll";
 
 export default function Introduction() {
   const imageStyles = {
@@ -11,9 +12,11 @@ export default function Introduction() {
   return (
     <div className="container" style={{ height: "80vH" }}>
       <div className="row ">
-        <div className="col text-center">
-          <img src={image} alt="my face" style={imageStyles} />
-        </div>
+        <Element name="home">
+          <div className="col text-center">
+            <img src={image} alt="my face" style={imageStyles} />
+          </div>
+        </Element>
       </div>
       <div className="row m-2">
         <div className="col text-center p-3">
