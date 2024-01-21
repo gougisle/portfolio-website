@@ -19,7 +19,7 @@ export default function PublicNavbar() {
         <Container>
           <Navbar.Brand>
             <Link to="home" offset={-200} style={{ cursor: "pointer" }}>
-              lefebagougis<span className="neon-text">.</span>io
+              lefebagougis
             </Link>
             <a
               href="https://github.com/gougisle"
