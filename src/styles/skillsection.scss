@@ -5,23 +5,14 @@ $darker-blue: #111118;
 $egg-shell: #f5f5dc;
 
 #skill-section {
-  //background-color: $egg-shell;
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  .skill-section-content {
-    //background-color: red;
-    height: fit-content;
-    width: 75%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  .skill-box-container {
+  flex-wrap: wrap;
+  .skill-box {
     width: 8rem;
     height: 8rem;
-    margin: 3rem;
+    margin: 8px;
     background-color: $darker-blue;
     border-top: 4px solid $neon-blue;
     border-left: 4px solid $neon-blue;

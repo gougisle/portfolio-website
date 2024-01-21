@@ -5,18 +5,18 @@ import { faCodepen } from "@fortawesome/free-brands-svg-icons";
 // FontAwesome: JS, react, html, css, database
 // need an icon: C#, .NetCore
 
-export default function SingleSkillBox({ label, icon }) {
+export default function SingleSkillBox({ label, icon, urlLink }) {
   const htmlCentering = { paddingLeft: "4px" };
 
   return (
-    <div className="skill-box-container">
+    <div className="skill-box">
       <div className="skill-box-icon">
         <FontAwesomeIcon
           icon={icon !== null ? icon : faCodepen}
           size="2xl"
           style={label === "HTML5" && htmlCentering}
         ></FontAwesomeIcon>
-      </div>
+      </div>{" "}
       <div className="skill-box-label">{label}</div>
     </div>
   );

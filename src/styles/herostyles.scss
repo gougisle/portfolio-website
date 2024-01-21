@@ -6,99 +6,54 @@ $egg-shell: #f5f5e2;
 $text-slide-duration: 3s;
 $text-slide-delay: 0.3s;
 
-.hero {
-  background: linear-gradient($neon-blue, $dark-blue);
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  overflow: hidden;
-  font-family: "Montserrat", sans-serif;
-  justify-content: center;
-  align-items: center;
-  .hero-title {
-    color: $egg-shell;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, $darker-blue 50%, $dark-blue 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  left: 50%;
+  text-align: center;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  .hero-image {
+    z-index: -1;
+    width: 300px;
+    padding: 1vmin;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 5px solid $dark-blue;
+    border-radius: 50%;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
   }
-  @keyframes text-slide-down {
-    0% {
-      opacity: 0;
-      transform: translateY(-30%); // Start from the right
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0); // Slide to the left
-    }
-  }
-  .animated-text {
-    animation: text-slide-down $text-slide-duration ease-in-out
-      $text-slide-delay both; /* Customize the animation duration and delay */
+  h1 {
+    margin-top: 2rem;
+    font-family: monospace;
   }
 }
 
-.cube {
-  position: absolute;
-  top: 80vh;
-  left: 45vw;
-  width: 10px;
-  height: 10px;
-  border: solid 1px darken($neon-blue, 8%);
-  transform-origin: top left;
-  transform: scale(0) rotate(0deg) translate(-50%, -50%);
-  animation: cube 12s ease-in forwards infinite;
-
-  &:nth-child(2n) {
-    border-color: lighten($neon-blue, 10%);
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
   }
-
-  &:nth-child(2) {
-    animation-delay: 2s;
-    left: 25vw;
-    top: 40vh;
-  }
-
-  &:nth-child(3) {
-    animation-delay: 4s;
-    left: 75vw;
-    top: 50vh;
-  }
-
-  &:nth-child(4) {
-    animation-delay: 6s;
-    left: 90vw;
-    top: 10vh;
-  }
-
-  &:nth-child(5) {
-    animation-delay: 8s;
-    left: 10vw;
-    top: 85vh;
-  }
-
-  &:nth-child(6) {
-    animation-delay: 10s;
-    left: 50vw;
-    top: 10vh;
-  }
-}
-
-.welcome-message-section {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
-@keyframes cube {
-  from {
-    transform: scale(0) rotate(0deg) translate(-50%, -50%);
-    opacity: 1;
-  }
-  to {
-    transform: scale(20) rotate(960deg) translate(-50%, -50%);
-    opacity: 0;
+  100% {
+    transform: translateX(25%);
   }
 }

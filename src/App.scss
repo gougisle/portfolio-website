@@ -2,18 +2,20 @@ $neon-blue: #59d2fe;
 
 .App {
   color: white;
+  font-family: monospace;
   span.neon-text {
     color: $neon-blue;
   }
-}
-
-.left-right-padding {
-  padding-left: 5rem;
-  padding-right: 5rem;
+  .main {
+    max-width: 100%;
+  }
 }
 
 .view-main-header {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+}
+
+.view-main-content {
+  margin-top: 2em;
 }

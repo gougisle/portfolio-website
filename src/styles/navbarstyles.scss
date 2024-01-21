@@ -4,6 +4,61 @@ $dark-blue: #191923;
 $darker-blue: #111118;
 $egg-shell: #f5f5db;
 
+.public-navbar {
+  .media-icon {
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: $neon-blue;
+    }
+  }
+  .contact-button {
+    max-width: fit-content;
+    border-top: 2px solid $neon-blue;
+    border-left: 2px solid $neon-blue;
+    border-right: 2px solid $neon-blue-active;
+    border-bottom: 2px solid $neon-blue-active;
+    border-radius: 10px;
+    background-color: $darker-blue;
+    color: $neon-blue;
+    padding: 0.5rem 1rem; //padding: vertical horizontal
+    cursor: pointer;
+    &:hover {
+      background-color: $neon-blue;
+      color: $dark-blue;
+    }
+    &:active {
+      background-color: hsla(196, 99%, 67%, 0.744);
+      transform: scale(0.9);
+    }
+  }
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    color: white; /* Change the text color to your preference */
+    &:hover {
+      color: $neon-blue;
+    }
+    // &::before {
+    //   content: "";
+    //   color: $neon-blue;
+    //   position: absolute;
+    //   width: 0;
+    //   height: 2px; /* Adjust the thickness of the underline as needed */
+    //   background-color: $neon-blue; /* Change the color of the underline to your preference */
+    //   bottom: 0;
+    //   left: 0;
+    //   transition: width 0.3s; /* Adjust the animation speed as needed */
+    // }
+    // &:hover::before {
+    //   width: 100%;
+    // }
+  }
+}
+
+//////////////////////////////////// KEEP ABOIVE //////////////
+
 .header {
   position: sticky;
   top: 0;
@@ -32,50 +87,32 @@ $egg-shell: #f5f5db;
       color: $egg-shell;
     }
   }
-  .header-nav-links {
-    display: flex;
-    gap: 3rem;
-    align-items: center;
-    a {
-      position: relative;
-      text-decoration: none;
-      color: $egg-shell; /* Change the text color to your preference */
-      &:hover {
-        color: $neon-blue;
-      }
-      &::before {
-        content: "";
-        color: $neon-blue;
-        position: absolute;
-        width: 0;
-        height: 2px; /* Adjust the thickness of the underline as needed */
-        background-color: $neon-blue; /* Change the color of the underline to your preference */
-        bottom: 0;
-        left: 0;
-        transition: width 0.3s; /* Adjust the animation speed as needed */
-      }
-      &:hover::before {
-        width: 100%;
-      }
-    }
-  }
-  .contact-button {
-    border-top: 2px solid $neon-blue;
-    border-left: 2px solid $neon-blue;
-    border-right: 2px solid $neon-blue-active;
-    border-bottom: 2px solid $neon-blue-active;
-    border-radius: 10px;
-    background-color: $darker-blue;
-    color: $neon-blue;
-    padding: 0.5rem 1rem; //padding: vertical horizontal
-    cursor: pointer;
+}
+
+.header-nav-links {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  a {
+    position: relative;
+    text-decoration: none;
+    color: $egg-shell; /* Change the text color to your preference */
     &:hover {
-      background-color: $neon-blue;
-      color: $dark-blue;
+      color: $neon-blue;
     }
-    &:active {
-      background-color: hsla(196, 99%, 67%, 0.744);
-      transform: scale(0.9);
+    &::before {
+      content: "";
+      color: $neon-blue;
+      position: absolute;
+      width: 0;
+      height: 2px; /* Adjust the thickness of the underline as needed */
+      background-color: $neon-blue; /* Change the color of the underline to your preference */
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s; /* Adjust the animation speed as needed */
+    }
+    &:hover::before {
+      width: 100%;
     }
   }
 }

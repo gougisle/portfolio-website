@@ -5,19 +5,9 @@ export default function Hero() {
   return (
     <>
       {" "}
-      <div className="hero">
-        {" "}
-        <div className="hero-title animated-text">
-          <p>Hello, my name's Lefeba</p>
-          <p>and this is my website </p>
-        </div>
-        <div className="cube"></div>
-        <div className="cube"></div>
-        <div className="cube"></div>
-        <div className="cube"></div>
-        <div className="cube"></div>
-        <div className="cube"></div>
-      </div>
+      <div class="bg"></div>
+      <div class="bg bg2"></div>
+      <div class="bg bg3"></div>
     </>
   );
 }
