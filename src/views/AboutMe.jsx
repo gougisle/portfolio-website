@@ -18,8 +18,8 @@ export default function AboutMeView() {
             <div className="about-me-intro">
               My professional background includes Software Engineering,
               Behavioral Science, and Mindfulness. I am interested in the
-              complex relationship between humans and technology. Ultimately I
-              seek to combine my knowledge of software and psychology to create
+              relationship between humans and technology. Ultimately I seek to
+              combine my knowledge of software and psychology to create
               intuitive tools that help people thrive. In my free time I enjoy
               making music, exploring nature and gaming.
             </div>
@@ -44,26 +44,24 @@ export default function AboutMeView() {
                   rel="noreferrer"
                 >
                   {" "}
-                  Finding Focus.
-                </a>{" "}
-                My contributions to this project included QA testing,
-                video/audio production and research design. This is where my
-                interets in software develpment was sparked.
+                  Finding Focus
+                </a>
+                . This is where my interets in software develpment was sparked.
               </p>
               <p>
                 Following my fellowship with the CMHP, I split my time between
                 working as a Behavioral Therapist and a Junior Developer Intern.
-                As a Behavioral Therapist, I learned invaluable lessons about
-                human compassion, trauma and mental illness. And as a developer
-                I learned to solved complex, software problems through
+                As a therapist, I learned invaluable lessons about human
+                compassion, trauma and mental illness. And as a developer, I
+                learned to solved complex, software problems through
                 experimentation, testing and collaboration.
               </p>
               <p>Then COVID happened...</p>
               <p>
-                Amidst the challenges posed by the COVID-19 pandemic, I used the
-                opportunity to further me skills as a software developer. After
-                just a few months of diligent studying I started my first
-                full-time as a Full Stack Developer with World Prints -- a small
+                Amidst the challenges posed by the COVID-19 pandemic, I decided
+                to expand me skills as a software developer. After just a few
+                months of diligent studying I started my first full-time
+                position as a Full Stack Developer with World Prints -- a small
                 T-shirt printing company based out of Los Angeles. Here I gained
                 a wealth of knowledge about database design, backend
                 development, frontend UI/UX design, product management and much

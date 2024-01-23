@@ -6,8 +6,8 @@ export default function Introduction() {
   const imageStyles = {
     width: "20rem",
     borderRadius: "50%",
-    border: "5px solid white",
-    borderColor: "white white grey grey",
+    border: "5px double white",
+    borderColor: "white",
   };
   return (
     <div className="container" style={{ height: "80vH" }}>

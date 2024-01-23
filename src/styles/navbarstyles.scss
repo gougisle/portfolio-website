@@ -13,6 +13,7 @@ $egg-shell: #f5f5db;
     }
   }
   .contact-button {
+    font-size: 1.1rem;
     max-width: fit-content;
     border-top: 2px solid $neon-blue;
     border-left: 2px solid $neon-blue;
@@ -33,6 +34,7 @@ $egg-shell: #f5f5db;
     }
   }
   .nav-link {
+    font-size: 1.1rem;
     position: relative;
     text-decoration: none;
     cursor: pointer;
@@ -42,27 +44,14 @@ $egg-shell: #f5f5db;
     }
   }
 }
-
-//////////////////////////////////// KEEP ABOIVE //////////////
-
-.header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: $darker-blue;
-  height: 5rem;
-  padding-left: 5rem;
-  padding-right: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-size: larger;
-  font-weight: normal;
-  #site-name {
-    font-weight: 500;
-    text-decoration: none;
-    color: $egg-shell;
+#brand-name {
+  color: white;
+  cursor: pointer;
+  &:hover {
+    color: $neon-blue;
   }
+
+  //////////////////////////////////// KEEP ABOIVE //////////////
 
   .header-title-section {
     .media-icon:hover {

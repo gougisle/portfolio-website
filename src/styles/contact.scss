@@ -30,7 +30,7 @@ $egg-shell: #f5f5db;
     border-radius: 10px;
     background-color: $darker-blue;
     color: $neon-blue;
-    padding: 0.5rem 1rem; //padding: vertical horizontal
+    padding: 0.5rem 1rem;
     cursor: pointer;
     &:hover {
       background-color: $neon-blue;
@@ -39,7 +39,6 @@ $egg-shell: #f5f5db;
     &:active {
       background-color: hsla(196, 99%, 67%, 0.744);
       transform: scale(0.9);
-      //border: 2px solid white;
     }
   }
 }

@@ -18,7 +18,7 @@ export default function PublicNavbar() {
       >
         <Container>
           <Navbar.Brand>
-            <Link to="home" offset={-200} style={{ cursor: "pointer" }}>
+            <Link to="home" offset={-200} id="brand-name">
               lefebagougis
             </Link>
             <a
