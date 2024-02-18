@@ -4,6 +4,12 @@ $dark-blue: #191923;
 $darker-blue: #111118;
 $egg-shell: #f5f5db;
 
+#public-nav-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
 .public-navbar {
   .media-icon {
     text-decoration: none;
@@ -49,45 +55,5 @@ $egg-shell: #f5f5db;
   cursor: pointer;
   &:hover {
     color: $neon-blue;
-  }
-
-  //////////////////////////////////// KEEP ABOIVE //////////////
-
-  .header-title-section {
-    .media-icon:hover {
-      color: $neon-blue;
-    }
-    a {
-      text-decoration: none;
-      color: $egg-shell;
-    }
-  }
-}
-
-.header-nav-links {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  a {
-    position: relative;
-    text-decoration: none;
-    color: $egg-shell;
-    &:hover {
-      color: $neon-blue;
-    }
-    &::before {
-      content: "";
-      color: $neon-blue;
-      position: absolute;
-      width: 0;
-      height: 2px;
-      background-color: $neon-blue;
-      bottom: 0;
-      left: 0;
-      transition: width 0.3s;
-    }
-    &:hover::before {
-      width: 100%;
-    }
   }
 }

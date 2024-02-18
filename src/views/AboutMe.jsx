@@ -20,8 +20,7 @@ export default function AboutMeView() {
               Behavioral Science, and Mindfulness. I am interested in the
               relationship between humans and technology. Ultimately I seek to
               combine my knowledge of software and psychology to create
-              intuitive tools that help people thrive. In my free time I enjoy
-              making music, exploring nature and gaming.
+              intuitive tools that help people thrive.
             </div>
             <div className="about-me-professional">
               {" "}
@@ -36,8 +35,8 @@ export default function AboutMeView() {
                 >
                   Center For Mindfulness and Human Potential (CMHP)
                 </a>
-                . Here I a played a critial role in the development and
-                maintanance of a Minfulness Education App –{" "}
+                . Here I played a critical role in the development and
+                maintenance of a Minfulness Education App –{" "}
                 <a
                   href="https://www.findingfocus.app/"
                   target="_blank"
@@ -46,26 +45,25 @@ export default function AboutMeView() {
                   {" "}
                   Finding Focus
                 </a>
-                . This is where my interets in software develpment was sparked.
+                . This is where my interest in software development was sparked.
               </p>
               <p>
                 Following my fellowship with the CMHP, I split my time between
                 working as a Behavioral Therapist and a Junior Developer Intern.
                 As a therapist, I learned invaluable lessons about human
                 compassion, trauma and mental illness. And as a developer, I
-                learned to solved complex, software problems through
+                learned to solve complex, software problems through
                 experimentation, testing and collaboration.
               </p>
               <p>Then COVID happened...</p>
               <p>
                 Amidst the challenges posed by the COVID-19 pandemic, I decided
-                to expand me skills as a software developer. After just a few
-                months of diligent studying I started my first full-time
+                to expand my skills as a software developer. After just a few
+                months of diligent studying, I started my first full-time
                 position as a Full Stack Developer with World Prints -- a small
-                T-shirt printing company based out of Los Angeles. Here I gained
-                a wealth of knowledge about database design, backend
-                development, frontend UI/UX design, product management and much
-                more.
+                T-shirt printing company based out of Los Angeles. Here I
+                acquired expertise in database design, backend development,
+                frontend UI/UX design and a plethora of other valuable skills.
               </p>
             </div>
             <div className="about-me-skills">
