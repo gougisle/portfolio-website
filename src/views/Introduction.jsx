@@ -1,23 +1,20 @@
 import React from "react";
-import image from "../assets/lefeba_headshot.png";
+import image from "../assets/linked_in_avatar.jpg";
 import { Element } from "react-scroll";
 import "../styles/introductionstyles.scss";
 
 export default function Introduction() {
-  const imageStyles = {
-    width: "60%",
-    borderRadius: "50%",
-    border: "5px double white",
-    borderColor: "white",
-  };
-
   return (
     <div className="container">
       <div className="introduction-wrapper">
         <div className="row">
           <Element name="home">
             <div className="col text-center">
-              <img src={image} alt="my face" style={imageStyles} />
+              <img
+                className="headshot-image"
+                src={image}
+                alt="Lefeba Gougis headshot"
+              />
             </div>
           </Element>
         </div>
