@@ -1,6 +1,5 @@
 $neon-blue: #59d2fe;
 $neon-blue-link: rgb(88, 180, 255);
-
 $neon-blue-active: #59d2fec1;
 $dark-blue: #191923;
 $darker-blue: #111118;
@@ -8,7 +7,8 @@ $egg-shell: #f5f5db;
 
 .App {
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   span.neon-text {
     color: $neon-blue;
   }
