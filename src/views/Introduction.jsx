@@ -5,7 +5,7 @@ import "../styles/introductionstyles.scss";
 
 export default function Introduction() {
   const imageStyles = {
-    width: "20rem",
+    width: "60%",
     borderRadius: "50%",
     border: "5px double white",
     borderColor: "white",

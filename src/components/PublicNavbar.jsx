@@ -16,7 +16,7 @@ export default function PublicNavbar() {
           expand="lg"
           bg="dark"
           data-bs-theme="dark"
-          className="bg-body-tertiary public-navbar"
+          className="public-navbar"
         >
           <Container>
             <Navbar.Brand>

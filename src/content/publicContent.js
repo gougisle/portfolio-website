@@ -65,7 +65,7 @@ const PROJECTS_ARR = [
     ],
     highlights: [
       "Conducted QA testing on Mindfulness application ensuring reliability of new features across multiple devices",
-      "Created surveys and questionnaires, to collect actionable user-feedback about the UI/UX",
+      "Created surveys and questionnaires, to collect actionable user-feedback about the frontend UI/UX",
     ],
   },
 ];

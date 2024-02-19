@@ -13,7 +13,7 @@ export default function WorkExperience() {
             <span className="neon-text fs-5">{item.title}</span>
           </p>
           <p>
-            <ul>
+            <ul className="fs-5">
               {item.highlights.map((h) => (
                 <li>{h}</li>
               ))}
@@ -21,7 +21,7 @@ export default function WorkExperience() {
 
             {item.workDescription}
           </p>
-          <p className="text-start">
+          <p className="text-start fs-5">
             {" | "}
             {item.skills.map((s) => s + " | ")}
           </p>

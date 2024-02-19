@@ -14,15 +14,7 @@ export default function AboutMeView() {
             About Me<span className="neon-text">.</span>
           </h1>
           <div className="view-main-content">
-            {" "}
-            <div className="about-me-intro">
-              My professional background includes Software Engineering,
-              Behavioral Science, and Mindfulness. I am interested in the
-              relationship between humans and technology. Ultimately I seek to
-              combine my knowledge of software and psychology to create
-              intuitive tools that help people thrive.
-            </div>
-            <div className="about-me-professional">
+            <div className="about-me-professional fs-5">
               {" "}
               <SectionNeonHeader title={"Early Career"} />
               <p>
