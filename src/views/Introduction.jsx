@@ -27,7 +27,7 @@ export default function Introduction() {
             <h1>
               <b>Lefeba Gougis III</b>
             </h1>
-            <h3>Full Stack Engineer</h3>
+            <h3>{`<Full Stack Engineer/>`}</h3>
             <h5>
               I am interested in the relationship between humans and technology.
               My professional background includes Software Engineering,
