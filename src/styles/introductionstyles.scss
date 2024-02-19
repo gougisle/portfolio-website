@@ -9,12 +9,12 @@
 
   img.headshot-image {
     width: 20rem;
-    height: 50%;
+    height: 20rem;
     border-radius: 50%;
     border: 7px double white;
-    @media screen and (max-width: 480px) {
-      width: 13rem;
-      height: 100%;
+    @media (max-width: 480px) {
+      width: 15rem;
+      height: 15rem;
       border-radius: 50%;
       border: 7px double white;
     }
